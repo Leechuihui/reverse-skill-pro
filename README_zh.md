@@ -10,6 +10,7 @@
 <p align="center">
   <a href="VERSION"><img src="https://img.shields.io/badge/release-v2.0.0-blue" alt="release v2.0.0"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="license"></a>
+  <a href="https://github.com/Leechuihui/reverse-skill-pro/actions/workflows/ci.yml"><img src="https://github.com/Leechuihui/reverse-skill-pro/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="#验证"><img src="https://img.shields.io/badge/routing%20benchmark-189%2F189-brightgreen" alt="benchmark"></a>
 </p>
 
@@ -79,7 +80,7 @@ PRIMARY 快路径：[skills/MASTER-ROUTING.md](skills/MASTER-ROUTING.md) · 全�
 ### 安装
 
 ```bash
-git clone https://github.com/<你的用户名>/reverse-skill-pro.git
+git clone https://github.com/Leechuihui/reverse-skill-pro.git
 ```
 
 ### 初次使用

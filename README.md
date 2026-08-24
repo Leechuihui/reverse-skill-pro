@@ -10,6 +10,7 @@
 <p align="center">
   <a href="VERSION"><img src="https://img.shields.io/badge/release-v2.0.0-blue" alt="release v2.0.0"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="license"></a>
+  <a href="https://github.com/Leechuihui/reverse-skill-pro/actions/workflows/ci.yml"><img src="https://github.com/Leechuihui/reverse-skill-pro/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="#verification"><img src="https://img.shields.io/badge/routing%20benchmark-189%2F189-brightgreen" alt="benchmark"></a>
 </p>
 
@@ -79,7 +80,7 @@ PRIMARY ladder: [skills/MASTER-ROUTING.md](skills/MASTER-ROUTING.md) · Full mat
 ### Install
 
 ```bash
-git clone https://github.com/<your-username>/reverse-skill-pro.git
+git clone https://github.com/Leechuihui/reverse-skill-pro.git
 ```
 
 ### First use
