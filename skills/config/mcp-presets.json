@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0",
+  "meta": {
+    "description": "reverse-skill-pro MCP 预置档案：把常用安全 MCP server 的接入方式集中成机器可读配置。Agent 按 preset 接线，不要现场猜端口/命令。安装仍必须走 bootstrap-manifest（供应链 pin 门禁），本文件只描述接线。",
+    "usage": "按 skill 场景选 preset -> 检查 tool-index 中该能力 available -> 未安装走 bootstrap-reverse -Capability <name> -> 按 transport/launch 接入客户端",
+    "rule": "禁止绕过 ops/skill-supply-chain.md 直接安装未登记的 MCP"
+  },
+  "presets": {
+    "ida-reverse-mcp": {
+      "transport": "http",
+      "default_url": "http://127.0.0.1:13337/mcp",
+      "capability": "idalib-mcp",
+      "skills": ["ida-reverse"],
+      "use_when": "IDA 反编译/交叉引用/数据流追踪的 AI 直控",
+      "health_check": "GET http://127.0.0.1:13337/ 返回即在线",
+      "launch_hint": "由 ida-reverse/scripts/start.ps1 托管启动；不要手写临时命令",
+      "parallel_safe": false,
+      "notes": "单实例服务；多目标时串行复用或开多端口实例并在 case 里记录端口"
+    },
+    "jshookmcp": {
+      "transport": "stdio",
+      "capability": "jshookmcp",
+      "skills": ["js-reverse"],
+      "use_when": "浏览器/CDP/Hook/Network/SourceMap/AST 全套 JS 逆向面",
+      "launch_hint": "npx jshookmcp（以 bootstrap 登记版本为准）",
+      "parallel_safe": true,
+      "notes": "每个浏览器实例独立会话；并行抓包任务可多开"
+    },
+    "anything-analyzer": {
+      "transport": "http",
+      "default_url": "http://127.0.0.1:23816",
+      "capability": "anything-analyzer",
+      "skills": ["js-reverse", "browser-automation"],
+      "use_when": "浏览器自动化 + HTTP 捕获 + AI 分析一体化",
+      "health_check": "GET http://127.0.0.1:23816/",
+      "parallel_safe": true
+    },
+    "burpsuite-mcp": {
+      "transport": "stdio",
+      "capability": "burpsuite-mcp",
+      "skills": ["pentest-tools"],
+      "use_when": "Burp 代理历史/Intruder/Repeater/Scanner 的 AI 全控制（60+ 工具）",
+      "launch_hint": "Burp 扩展方式加载（见 pentest-tools/references/burpsuite-mcp-guide.md）",
+      "parallel_safe": false,
+      "notes": "依赖 Burp 桌面进程；scope 必须先 granted"
+    },
+    "ghidra-mcp": {
+      "transport": "stdio",
+      "capability": "ghidra-mcp",
+      "skills": ["ghidra-reverse"],
+      "use_when": "无 IDA 许可时的开源反编译直控",
+      "parallel_safe": true,
+      "notes": "headless 项目级并行安全；GUI 模式单实例"
+    },
+    "reqable-mcp": {
+      "transport": "stdio",
+      "capability": "reqable-mcp",
+      "skills": ["js-reverse", "pentest-tools"],
+      "use_when": "Reqable 抓包客户端联动（请求重放/改写）",
+      "parallel_safe": true,
+      "notes": "需要用户自装 Reqable 桌面端；MCP 只登记固定版本运行时"
+    },
+    "xquik-mcp": {
+      "transport": "remote-http",
+      "capability": "xquik-mcp",
+      "skills": ["threat-intelligence"],
+      "use_when": "公开 X/Twitter 帖子采集做 OSINT 线索补充",
+      "parallel_safe": true,
+      "notes": "需注册与 OAuth；产出仅作为待核验线索，不直接当结论"
+    },
+    "r2mcp": {
+      "transport": "stdio",
+      "capability": null,
+      "skills": ["radare2"],
+      "use_when": "radare2 CLI 的 AI 直控（r2pipe over mcp）",
+      "launch_hint": "r2pm 安装 r2mcp 后由 r2 会话内启动；登记到 tool-index 前视为可选增强",
+      "parallel_safe": true,
+      "notes": "manifest 未登记 -> 只能手动安装并自行评估供应链"
+    }
+  },
+  "wiring_examples": {
+    "opencode_mcp_json": {
+      "note": "opencode.json 片段示例（本地 stdio 型）",
+      "snippet": {
+        "mcp": {
+          "jshookmcp": {
+            "type": "local",
+            "command": ["npx", "jshookmcp"],
+            "enabled": true
+          }
+        }
+      }
+    },
+    "claude_desktop_json": {
+      "note": "Claude Desktop claude_desktop_config.json 片段示例",
+      "snippet": {
+        "mcpServers": {
+          "ghidra-mcp": {
+            "command": "python",
+            "args": ["-m", "ghidra_mcp"]
+          }
+        }
+      }
+    }
+  }
+}
