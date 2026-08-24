@@ -5,6 +5,8 @@
 <h1 align="center">reverse-skill-pro</h1>
 <h3 align="center">Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack (Enhanced)</h3>
 
+<p align="center"><a href="README_zh.md">简体中文</a> | English</p>
+
 <p align="center">AI-powered routing · On-demand toolchain bootstrapping · Self-evolving knowledge base · One-shot triage · Parallel orchestration</p>
 
 <p align="center">

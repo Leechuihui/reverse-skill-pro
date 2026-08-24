@@ -5,6 +5,8 @@
 <h1 align="center">reverse-skill-pro</h1>
 <h3 align="center">逆向工程 / 授权渗透测试 / 安全研究 —— AI Agent 技能路由包（增强版）</h3>
 
+<p align="center">简体中文 | <a href="README.md">English</a></p>
+
 <p align="center">AI 自动路由 · 按需自举工具链 · 自动进化经验库 · 一键分诊 · 并行编排</p>
 
 <p align="center">
