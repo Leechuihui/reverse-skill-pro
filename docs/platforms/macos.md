@@ -1,4 +1,4 @@
-# macOS Setup
+﻿# macOS Setup
 
 This guide covers macOS users who want to use Cybersecurity Skills Router with Claude Code, Codex CLI, Cursor, Cline, Windsurf, Kiro, or another Agent client.
 
@@ -133,7 +133,7 @@ MCP stdio bridge:
   "mcpServers": {
     "burpsuite": {
       "command": "node",
-      "args": ["/absolute/path/to/reverse-skill/burp-mcp-full/mcp-bridge.js"]
+      "args": ["/absolute/path/to/reverse-skill-pro/burp-mcp-full/mcp-bridge.js"]
     }
   }
 }

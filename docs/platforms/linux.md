@@ -1,4 +1,4 @@
-# Generic Linux Setup
+﻿# Generic Linux Setup
 
 This guide covers ordinary Linux distributions such as Ubuntu, Debian, Linux Mint, Pop!_OS, and other Debian-family systems. Kali Linux has a dedicated path: [`../../kali/README-kali.md`](../../kali/README-kali.md).
 
@@ -147,7 +147,7 @@ MCP stdio bridge example:
   "mcpServers": {
     "burpsuite": {
       "command": "node",
-      "args": ["/absolute/path/to/reverse-skill/burp-mcp-full/mcp-bridge.js"]
+      "args": ["/absolute/path/to/reverse-skill-pro/burp-mcp-full/mcp-bridge.js"]
     }
   }
 }

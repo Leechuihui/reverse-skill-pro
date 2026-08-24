@@ -361,7 +361,7 @@ function Get-GitHubLatestReleaseAsset {
     else {
         $uri = "https://api.github.com/repos/$Repo/releases/latest"
     }
-    $release = Invoke-RestMethod -Uri $uri -Headers @{ 'User-Agent' = 'reverse-skill-bootstrap' }
+    $release = Invoke-RestMethod -Uri $uri -Headers @{ 'User-Agent' = 'reverse-skill-pro-bootstrap' }
     $asset = @($release.assets) | Where-Object { $_.name -match $AssetRegex } | Select-Object -First 1
     if ($null -eq $asset) {
         throw "No release asset matched $AssetRegex for $Repo (tag=$ReleaseTag)"

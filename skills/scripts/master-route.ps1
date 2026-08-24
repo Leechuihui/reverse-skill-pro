@@ -1,5 +1,5 @@
 ﻿#Requires -Version 5.1
-# reverse-skill PRIMARY router.
+# reverse-skill-pro PRIMARY router.
 # 规则单一事实源：skills/config/routing.json（勿在本脚本内硬编码路由表）。
 # CLI 兼容旧版：-Hint / -OutDir；输出 route-scope.md；退出码 0 成功 / 2 配置或技能缺失。
 # 读取 UTF-8 BOM 源以保证 Windows PowerShell 5.1 下 CJK 正常。
@@ -131,16 +131,16 @@ if ([string]::IsNullOrWhiteSpace($OutDir)) {
         $OutDir = Join-Path (Join-Path $packageRoot 'work') ("master-route-{0}" -f $stamp)
     } else {
         $tmpBase = if ($env:TEMP) { $env:TEMP } else { [System.IO.Path]::GetTempPath() }
-        $OutDir = Join-Path (Join-Path $tmpBase 'reverse-skill-route') ("master-route-{0}" -f $stamp)
+        $OutDir = Join-Path (Join-Path $tmpBase 'reverse-skill-pro-route') ("master-route-{0}" -f $stamp)
     }
 }
 New-Item -ItemType Directory -Force -Path $OutDir | Out-Null
 
 # --- 写 route-scope.md（格式与旧版一致，下游脚本解析 primary_skill / primary） ---
 $sb = New-Object System.Text.StringBuilder
-[void]$sb.AppendLine('# reverse-skill Master route (PRIMARY)')
+[void]$sb.AppendLine('# reverse-skill-pro Master route (PRIMARY)')
 [void]$sb.AppendLine(("- created: {0}" -f (Get-Date -Format 'o')))
-[void]$sb.AppendLine(("- package: reverse-skill"))
+[void]$sb.AppendLine(("- package: reverse-skill-pro"))
 $hintOneLine = (($Hint -replace '[\r\n]+', ' ').Trim())
 [void]$sb.AppendLine(("- hint: {0}" -f $hintOneLine))
 [void]$sb.AppendLine(("- primary: {0}" -f $primary))

@@ -1,4 +1,4 @@
----
+﻿---
 name: ida-reverse
 description: |
   IDA Pro 逆向分析辅助技能。当用户提到逆向、反编译、分析二进制/PE/ELF/APK/DLL/SO、破解、找密码、漏洞分析、病毒分析、firmware 固件分析，或需要分析 exe/dll/so/elf/macho/sys 等文件时，务必使用此技能。
@@ -68,7 +68,7 @@ description: |
 9. **HTTP MCP 会在登录后静默退出**
    - Cursor/Claude 的 `type: http` 不会代为拉起进程；旧计划任务只在登录时跑一次
    - `pythonw` 无控制台，崩溃时 Application 日志也是空的
-   - **解决办法**：`start.ps1` 默认健康则复用；`watchdog.ps1` 每分钟巡检；日志在 `%LOCALAPPDATA%\reverse-skill\ida-mcp\`
+   - **解决办法**：`start.ps1` 默认健康则复用；`watchdog.ps1` 每分钟巡检；日志在 `%LOCALAPPDATA%\reverse-skill-pro\ida-mcp\`
    - 安装：`scripts/install-autostart.ps1`。Cursor 若启动时端口还没起来，仍需在 MCP 面板手动刷新一次
 
 ### 工作流程原则
@@ -93,7 +93,7 @@ description: |
 - 仅在端口无人监听、或快速返回且缺 `py_eval` 时替换 managed supervisor；**永不杀 `ida.exe`，不用 `taskkill /T`**
 - GUI 占用 13337 时输出 `WARN:gui_busy` 并退出，不另起 supervisor
 - 成功输出 `OK:<工具数>`（当前约 66），失败输出 `ERR:timeout`
-- supervisor 日志：`%LOCALAPPDATA%\reverse-skill\ida-mcp\supervisor.log`
+- supervisor 日志：`%LOCALAPPDATA%\reverse-skill-pro\ida-mcp\supervisor.log`
 - 服务器在后台运行，不阻塞对话
 
 **调用方式**：
@@ -104,8 +104,8 @@ powershell -File "<skill-root>\ida-reverse\scripts\start.ps1"
 ### watchdog.ps1 / install-autostart.ps1 — 保活
 
 - `watchdog.ps1`：探测 13337，健康则 `OK:<n>:reuse`，挂了才调用 `start.ps1`
-- `install-autostart.ps1`：注册计划任务 `reverse-skill-ida-mcp`（登录 + 每分钟）
-- 日志：`%LOCALAPPDATA%\reverse-skill\ida-mcp\watchdog.log`
+- `install-autostart.ps1`：注册计划任务 `reverse-skill-pro-ida-mcp`（登录 + 每分钟）
+- 日志：`%LOCALAPPDATA%\reverse-skill-pro\ida-mcp\watchdog.log`
 
 ### open.ps1 — 打开二进制文件
 

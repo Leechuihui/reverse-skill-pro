@@ -1,5 +1,5 @@
 ﻿#Requires -Version 5.1
-# reverse-skill 路由回归测试器：跑 routing-benchmark.json 全部用例，比对 PRIMARY 期望。
+# reverse-skill-pro 路由回归测试器：跑 routing-benchmark.json 全部用例，比对 PRIMARY 期望。
 # 用法：
 #   powershell -NoProfile -ExecutionPolicy Bypass -File skills/scripts/test-routing.ps1
 #   powershell -File skills/scripts/test-routing.ps1 -Quick          # 只跑 quick 最小回归集

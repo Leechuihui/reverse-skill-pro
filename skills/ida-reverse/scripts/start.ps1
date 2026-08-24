@@ -24,7 +24,7 @@ param(
 $ErrorActionPreference = 'Stop'
 
 function Get-IdaMcpLogDir {
-    $dir = Join-Path $env:LOCALAPPDATA 'reverse-skill\ida-mcp'
+    $dir = Join-Path $env:LOCALAPPDATA 'reverse-skill-pro\ida-mcp'
     if (-not (Test-Path -LiteralPath $dir)) {
         New-Item -ItemType Directory -Path $dir -Force | Out-Null
     }

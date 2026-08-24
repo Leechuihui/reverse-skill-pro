@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+﻿#!/usr/bin/env bash
 # bootstrap-reverse.sh — generic Linux/macOS bootstrapper
 #
 # Parity target: skills/scripts/bootstrap-reverse.ps1
@@ -316,7 +316,7 @@ if tag:
     url = f'https://api.github.com/repos/{repo}/releases/tags/{tag}'
 else:
     url = f'https://api.github.com/repos/{repo}/releases/latest'
-req = urllib.request.Request(url, headers={'User-Agent':'reverse-skill-bootstrap'})
+req = urllib.request.Request(url, headers={'User-Agent':'reverse-skill-pro-bootstrap'})
 with urllib.request.urlopen(req, timeout=30) as r:
     data = json.load(r)
 for asset in data.get('assets', []):

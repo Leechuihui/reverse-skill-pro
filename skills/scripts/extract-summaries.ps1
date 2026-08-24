@@ -73,7 +73,7 @@ foreach ($sf in $skillFiles) {
 }
 
 $sb = New-Object System.Text.StringBuilder
-[void]$sb.AppendLine('# reverse-skill 技能导航索引')
+[void]$sb.AppendLine('# reverse-skill-pro 技能导航索引')
 [void]$sb.AppendLine('')
 [void]$sb.AppendLine('> 本文件由 `skills/scripts/extract-summaries.ps1` 自动生成，**请勿手改**。')
 [void]$sb.AppendLine('> 修改摘要请编辑对应模块 `SKILL.md` 的 frontmatter `description`，然后重跑脚本。')

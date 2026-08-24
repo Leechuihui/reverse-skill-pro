@@ -1,6 +1,6 @@
----
-name: reverse-skill-router
-description: Routes reverse engineering, exploitation, penetration testing, malware, mobile, firmware, browser automation, documentation, and security tasks to the appropriate specialist skill. Use when a task spans modules or the correct reverse-skill entrypoint is unclear.
+﻿---
+name: reverse-skill-pro-router
+description: Routes reverse engineering, exploitation, penetration testing, malware, mobile, firmware, browser automation, documentation, and security tasks to the appropriate specialist skill. Use when a task spans modules or the correct reverse-skill-pro entrypoint is unclear.
 ---
 # Reverse Engineering Skills Master Control
 

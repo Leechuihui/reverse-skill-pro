@@ -1,4 +1,4 @@
-# RE Agent 工作流门闩（静态↔动态）
+﻿# RE Agent 工作流门闩（静态↔动态）
 
 > 来源启发：binary-re 阶段划分、社区 RE skill（Frida/r2/Ghidra/IDA 循环）、Cerberus 三头环（静/动/插桩）  
 > Issue #65 增量：IAT 修复铁律、六阶段映射、.NET/DLL·SYS 等价路径；用户指令可行性门闩；旁路补丁 6–10；反调试/混淆菜谱 A–T；非 PE 多格式菜谱 U–AV（2026-08-12）  
@@ -114,7 +114,7 @@
 □ 时间盒（补丁 9 · SHOULD 默认）：静态深挖约 15 分钟仍无关键路径 → 强制转入 §3 Dynamic（用户/任务可覆盖时长）
 ```
 
-**无 MCP 时**：可用导出反编译文本再分析（对照 P4nda0s reverse-skills / IDA-NO-MCP 思路），仍写 Evidence 路径。
+**无 MCP 时**：可用导出反编译文本再分析（对照 P4nda0s reverse-skill-pros / IDA-NO-MCP 思路），仍写 Evidence 路径。
 
 ## 3. Dynamic（交叉验证循环区）
 

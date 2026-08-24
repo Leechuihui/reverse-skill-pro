@@ -1,4 +1,4 @@
-# Kali Linux 入口（短跳转）
+﻿# Kali Linux 入口（短跳转）
 
 > **详细说明以 [kali/README-kali.md](kali/README-kali.md) 为准。**  
 > 本文件仅作仓库根目录的 Kali 快捷入口，避免与 `kali/` 下正文重复维护。
@@ -16,7 +16,7 @@
 ## 人：30 秒上手
 
 ```bash
-cd /path/to/reverse-skill
+cd /path/to/reverse-skill-pro
 bash kali/scripts/refresh-tool-index.sh
 # 详细 bootstrap / MCP 见 kali/README-kali.md
 ```

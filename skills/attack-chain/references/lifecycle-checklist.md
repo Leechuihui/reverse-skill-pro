@@ -1,4 +1,4 @@
-# 渗透/攻击链生命周期检查单
+﻿# 渗透/攻击链生命周期检查单
 
 > 对照社区 pentest skill 包（如 Orizon claude-code-pentest 六阶段）与本包 `attack-chain` + `ops` 整合。  
 > 来源启发：公开 Claude pentest lifecycle skills（2026-07 检索）；**命令与授权以本包 scope 为准**。  
@@ -25,7 +25,7 @@
 
 ## 与「给一个域名全自动打穿」类 skill 的差异（特色）
 
-| 外部自动化包常见 | reverse-skill |
+| 外部自动化包常见 | reverse-skill-pro |
 |------------------|---------------|
 | 默认对域名狂扫 | 必须 scope 资产列表 |
 | 弱证据直接写报告 | 强制 E/F/P 链 |

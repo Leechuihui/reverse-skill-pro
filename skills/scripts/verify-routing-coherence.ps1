@@ -1,5 +1,5 @@
 ﻿#Requires -Version 5.1
-# reverse-skill routing + ops contract gates (skill-router only; no host platform runtime)
+# reverse-skill-pro routing + ops contract gates (skill-router only; no host platform runtime)
 param([string] $ScratchDir = '')
 $ErrorActionPreference = 'Stop'
 
@@ -457,7 +457,7 @@ foreach ($mf in @($skillsManifest, $kaliManifest)) {
 # identity: no FastAPI/React requirement in ops IDENTITY
 $id = Get-Content (Join-Path $skillsRoot 'ops/IDENTITY.md') -Raw -Encoding UTF8
 if ($id -match '不是|不做|NOT|not a Z3r0|FastAPI|React') { Ok 'identity distinguishes platform' } else { Bad 'identity weak' }
-if ($id -match 'tool-index|bootstrap|field-journal|路由') { Ok 'identity keeps reverse-skill DNA' } else { Bad 'identity missing DNA' }
+if ($id -match 'tool-index|bootstrap|field-journal|路由') { Ok 'identity keeps reverse-skill-pro DNA' } else { Bad 'identity missing DNA' }
 
 $idCheck = @()
 $idCheck += "HEAD packageRoot=$packageRoot"

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+﻿#!/usr/bin/env bash
 # Run the shared routing benchmark through the Bash structured router.
 set -euo pipefail
 
@@ -69,7 +69,7 @@ with tempfile.TemporaryDirectory(prefix="rs-routing-bash-") as scratch:
 
     # Regression: when neither --project-root nor --out-dir is supplied, the
     # Bash router must behave like the PowerShell router and write under the
-    # caller's current project, not under the installed reverse-skill package.
+    # caller's current project, not under the installed reverse-skill-pro package.
     source_skills = router_path.parent.parent
     source_config = source_skills / "config" / "routing.json"
     config = json.loads(source_config.read_text(encoding="utf-8-sig"))

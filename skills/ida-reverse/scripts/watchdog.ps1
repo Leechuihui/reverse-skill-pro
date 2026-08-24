@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
 Ensure IDA Pro MCP HTTP is healthy; start it only when down.
 
@@ -16,7 +16,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
-$logDir = Join-Path $env:LOCALAPPDATA 'reverse-skill\ida-mcp'
+$logDir = Join-Path $env:LOCALAPPDATA 'reverse-skill-pro\ida-mcp'
 if (-not (Test-Path -LiteralPath $logDir)) {
     New-Item -ItemType Directory -Path $logDir -Force | Out-Null
 }

@@ -1,5 +1,5 @@
 ﻿#Requires -Version 5.1
-# Initialize work/<case>/ with scope, timeline, workitems (reverse-skill ops contract).
+# Initialize work/<case>/ with scope, timeline, workitems (reverse-skill-pro ops contract).
 # Bare invocation keeps pending/offline defaults.
 # Ready-to-act example:
 #   powershell -File skills/scripts/case-init.ps1 -Hint "web pentest" -CaseName my-case `

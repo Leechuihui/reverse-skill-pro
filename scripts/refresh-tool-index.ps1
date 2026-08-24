@@ -1,6 +1,6 @@
-<#
+﻿<#
 .SYNOPSIS
-Refresh the local reverse-skill tool index.
+Refresh the local reverse-skill-pro tool index.
 
 .DESCRIPTION
 Root-level compatibility wrapper. The real implementation lives at:

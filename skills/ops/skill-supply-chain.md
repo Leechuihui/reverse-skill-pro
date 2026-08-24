@@ -1,12 +1,12 @@
-# Agent Skill 供应链安全（本包特色）
+﻿# Agent Skill 供应链安全（本包特色）
 
 > 来源综合：OWASP Agentic Skills Top 10（AST10）、Anthropic Agent Skills 安全建议、公开投毒事件（如 ClawHavoc，见 AST10 时间线）  
 > 检索日期：2026-07-17  
 > 适用：安装/编写/合并 **任何** skill、MCP、bootstrap 脚本时
 
-本包**可执行脚本面**静态审计（后门 / 删库 / 管道执行）：[`docs/PACKAGE-SECURITY-AUDIT.md`](../../docs/PACKAGE-SECURITY-AUDIT.md)。
+本包**可执行脚本面**保持最小化：所有自动安装能力集中在 `skills/scripts/bootstrap-manifest.json`（版本 pin 门禁由 `verify-routing-coherence.ps1` 强制），未登记的脚本一律不自动执行。
 
-## 1. 为什么 reverse-skill 要单独管这个
+## 1. 为什么 reverse-skill-pro 要单独管这个
 
 本包会：
 

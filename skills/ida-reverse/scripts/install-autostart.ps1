@@ -1,9 +1,9 @@
-<#
+﻿<#
 .SYNOPSIS
 Register a keep-alive scheduled task for IDA Pro MCP HTTP.
 
 .DESCRIPTION
-Replaces the old logon-only reverse-skill-ida-mcp task with:
+Replaces the old logon-only reverse-skill-pro-ida-mcp task with:
 - At logon + 30s delay
 - Once-from-now trigger repeating every 1 minute for 3650 days
   (this host cannot write -Daily.Repetition)
@@ -22,7 +22,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
-$taskName = 'reverse-skill-ida-mcp'
+$taskName = 'reverse-skill-pro-ida-mcp'
 $watchdog = Join-Path $PSScriptRoot 'watchdog.ps1'
 if (-not (Test-Path -LiteralPath $watchdog)) {
     Write-Output "ERR:missing $watchdog"

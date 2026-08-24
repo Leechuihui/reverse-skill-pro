@@ -1,5 +1,5 @@
 ﻿#Requires -Version 5.1
-# reverse-skill smoke entrypoint: verify + script parse + master-route sample matrix.
+# reverse-skill-pro smoke entrypoint: verify + script parse + master-route sample matrix.
 # Usage:
 #   powershell -NoProfile -ExecutionPolicy Bypass -File skills/scripts/smoke.ps1
 #   powershell -File skills/scripts/smoke.ps1 -LogDir C:\path\to\logs
@@ -44,7 +44,7 @@ if (-not $SmokeHostExe) {
         $SmokeHostExe = Join-Path $env:SystemRoot 'System32\WindowsPowerShell\v1.0\powershell.exe'
     }
 }
-Write-Host ("=== reverse-skill smoke | LogDir={0} | Host={1} ===" -f $LogDir, $SmokeHostExe)
+Write-Host ("=== reverse-skill-pro smoke | LogDir={0} | Host={1} ===" -f $LogDir, $SmokeHostExe)
 
 # --- 1) routing coherence ---
 $verify = Join-Path $scriptDir 'verify-routing-coherence.ps1'

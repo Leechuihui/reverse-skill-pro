@@ -6,7 +6,7 @@ param(
 $ErrorActionPreference = 'Stop'
 $scriptDir = $PSScriptRoot
 if ([string]::IsNullOrWhiteSpace($ScratchDir)) {
-    $ScratchDir = Join-Path ([System.IO.Path]::GetTempPath()) ('reverse-skill-codex-encoding-' + [guid]::NewGuid().ToString('N'))
+    $ScratchDir = Join-Path ([System.IO.Path]::GetTempPath()) ('reverse-skill-pro-codex-encoding-' + [guid]::NewGuid().ToString('N'))
 }
 New-Item -ItemType Directory -Path $ScratchDir -Force | Out-Null
 

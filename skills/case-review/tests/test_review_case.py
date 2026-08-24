@@ -1,4 +1,4 @@
-import hashlib
+﻿import hashlib
 import importlib.util
 import tempfile
 import unittest
@@ -20,7 +20,7 @@ class ReviewCaseTests(unittest.TestCase):
             report_dir.mkdir(parents=True)
 
         artifact = evidence_dir / "sample.bin"
-        artifact.write_bytes(b"reverse-skill case review fixture")
+        artifact.write_bytes(b"reverse-skill-pro case review fixture")
         digest = hashlib.sha256(artifact.read_bytes()).hexdigest()
 
         (root / "scope.md").write_text(
@@ -184,12 +184,12 @@ class ReviewCaseTests(unittest.TestCase):
             scope = root / "scope.md"
             scope.write_text(
                 scope.read_text(encoding="utf-8")
-                .replace("  - sample.bin", r"  - D:\reverse-skill")
+                .replace("  - sample.bin", r"  - D:\reverse-skill-pro")
                 .replace("- mode: offline", "- mode: lab_only"),
                 encoding="utf-8",
             )
             result = REVIEW_CASE.review_case(root)
-            self.assertEqual(result["scope"]["assets"], [r"D:\reverse-skill"])
+            self.assertEqual(result["scope"]["assets"], [r"D:\reverse-skill-pro"])
             self.assertFalse(any(item["code"] == "scope.assets_missing" for item in result["issues"]))
 
 

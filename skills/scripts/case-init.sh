@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
-# reverse-skill case initializer (bash parity of case-init.ps1 + offline/ctf presets)
+﻿#!/usr/bin/env bash
+# reverse-skill-pro case initializer (bash parity of case-init.ps1 + offline/ctf presets)
 # Usage:
 #   bash skills/scripts/case-init.sh --hint "apk reverse" --case-name demo
 #   bash skills/scripts/case-init.sh --hint "local sample" --preset offline-sample --sample ./app.apk

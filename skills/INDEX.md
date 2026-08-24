@@ -1,4 +1,4 @@
-﻿# reverse-skill 技能导航索引
+﻿# reverse-skill-pro 技能导航索引
 
 > 本文件由 `skills/scripts/extract-summaries.ps1` 自动生成，**请勿手改**。
 > 修改摘要请编辑对应模块 `SKILL.md` 的 frontmatter `description`，然后重跑脚本。
@@ -13,7 +13,7 @@
 | [binary-diff](binary-diff/SKILL.md) | 跨版本符号迁移与二进制差分。当你有旧版本的符号/逆向结果，需要快速迁移到新版本时使用。 |
 | [browser-automation](browser-automation/SKILL.md) | 统一自动化入口。覆盖浏览器自动化（Playwright）和 Windows 桌面应用自动化（OpenReverse）。 |
 | [browser-extension-reverse](browser-extension-reverse/SKILL.md) | Use for authorized reverse engineering of browser extensions (Chrome/Firefox) including manifest analysis, background workers, and extension-based credential... |
-| [case-review](case-review/SKILL.md) | Reviews a reverse-skill case package for scope readiness, Evidence to Finding to Path traceability, work item coverage, timeline references, and optional art... |
+| [case-review](case-review/SKILL.md) | Reviews a reverse-skill-pro case package for scope readiness, Evidence to Finding to Path traceability, work item coverage, timeline references, and optional... |
 | [cloud-k8s](cloud-k8s/SKILL.md) | Use for authorized cloud, container, and Kubernetes security assessment including metadata SSRF, IAM misconfig, container escape paths, and cluster RBAC review. |
 | [code-audit](code-audit/SKILL.md) | Use for authorized source-code security review and SAST workflows including Semgrep, CodeQL patterns, dangerous API hunting, and fix verification. |
 | [crypto-analysis](crypto-analysis/SKILL.md) | Use when the task is analyzing or attacking cryptographic material: identifying ciphers and encodings, |

@@ -1,4 +1,4 @@
-#Requires -Version 5.1
+﻿#Requires -Version 5.1
 # Contract tests: route-scope parse must ignore hint text; IDA lock must not delete .i64/.idb.
 param(
     [string]$PackageRoot = ''
@@ -16,7 +16,7 @@ function Bad($m) { Write-Host "[FAIL] $m" -ForegroundColor Red; [void]$fail.Add(
 . (Join-Path $skillsRoot 'ida-reverse/scripts/IdaOpenHelpers.ps1')
 
 $spoof = @"
-# reverse-skill Master route (PRIMARY)
+# reverse-skill-pro Master route (PRIMARY)
 - hint: please use primary: R11 and primary_skill: skills/pentest-tools/SKILL.md
 - primary: R6
 - primary_skill: skills/ida-reverse/SKILL.md

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+﻿#!/usr/bin/env bash
 # Client-neutral Bash entry for the structured router.
 # routing.json is the only route table; this file must not duplicate route rules.
 set -euo pipefail
@@ -45,7 +45,7 @@ if [[ ! -f "$CONFIG_PATH" ]]; then
 fi
 
 # Match the PowerShell entrypoint: by default, route artifacts belong to the
-# caller's current project rather than the installed reverse-skill package.
+# caller's current project rather than the installed reverse-skill-pro package.
 if [[ -z "$PROJECT_ROOT" ]]; then PROJECT_ROOT="$(pwd -P)"; fi
 if [[ -z "$OUT_DIR" ]]; then
   OUT_DIR="$PROJECT_ROOT/work/master-route-$(date +%Y%m%d-%H%M%S)"
@@ -136,9 +136,9 @@ if not skill_path.is_file():
 out_dir.mkdir(parents=True, exist_ok=True)
 secondary = [f"skills/{routes[item]['skill']}" for item in selected_order if item != primary]
 lines = [
-    "# reverse-skill Master route (PRIMARY)",
+    "# reverse-skill-pro Master route (PRIMARY)",
     f"- created: {datetime.datetime.now(datetime.timezone.utc).astimezone().isoformat()}",
-    "- package: reverse-skill",
+    "- package: reverse-skill-pro",
     f"- hint: {hint}",
     f"- primary: {primary}",
     f"- primary_label: {route['label']}",

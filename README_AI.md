@@ -1,4 +1,4 @@
-# Cybersecurity Skills Router — AI Agent Bootstrap
+﻿# Cybersecurity Skills Router — AI Agent Bootstrap
 
 > ⚡ **For AI agents only.** If you are a human reader, go back to [README.md](README.md) (English) or [README_zh.md](README_zh.md) (中文).
 
@@ -65,7 +65,7 @@ AI Community: https://linux.do
 ```markdown
 ✅ **Reverse-Engineering Skill Routing Pack Configured Successfully**
 
-**Installation path**: C:\Users\xxx\Desktop\reverse-skill
+**Installation path**: C:\Users\xxx\Desktop\reverse-skill-pro
 **System detected**: Windows / Kali Linux / generic Linux / macOS / other
 **Deployment document**: <actual platform document read>
 **Tool status**:
@@ -606,7 +606,7 @@ If adding a new skill:
 
 ## License
 
-This project (`reverse-skill`) is primarily licensed under the **MIT License**. CTF-Sandbox-Orchestrator/ is **GNU GPLv3**. Other tools (jadx, frida, nmap, burpsuite-mcp, etc.) are subject to their respective official licenses.
+This project (`reverse-skill-pro`) is primarily licensed under the **MIT License**. CTF-Sandbox-Orchestrator/ is **GNU GPLv3**. Other tools (jadx, frida, nmap, burpsuite-mcp, etc.) are subject to their respective official licenses.
 
 This package is intended only for legally authorized security research, learning, and CTF competitions.
 - Users must ensure all operations are within legal boundaries

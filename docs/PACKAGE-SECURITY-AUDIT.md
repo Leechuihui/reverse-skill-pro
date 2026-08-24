@@ -1,4 +1,4 @@
-# reverse-skill 包内安全审计（可执行面）
+﻿# reverse-skill-pro 包内安全审计（可执行面）
 
 > 日期：2026-08-02
 > 范围：`skills/**/scripts`、`skills/scripts`、`kali/scripts`、`burp-mcp-full` 可执行脚本与 bootstrap 清单  
