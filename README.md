@@ -159,7 +159,7 @@ Platform notes:
 ├── RULES.md / RULES_zh.md        # global routing (with scope gate)
 ├── skills/
 │   ├── MASTER-ROUTING.md         # PRIMARY ladder
-│   ├── SKILL.md / routing.md     # master control + three-axis matrix
+│   ├── router.md / routing.md    # master control + three-axis matrix
 │   ├── ops/                      # scope / evidence / roles / timeline
 │   ├── scripts/                  # master-route / quick-triage / case-init / case-resume / bootstrap
 │   ├── config/                   # routing.json + mcp-presets.json
