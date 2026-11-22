@@ -20,7 +20,7 @@ This project uses a layered platform model:
 The following are not tied to a platform:
 
 - `RULES.md`
-- `skills/SKILL.md`
+- `skills/router.md`
 - `skills/routing.md`
 - most `SKILL.md` methodology files
 - `CTF-Sandbox-Orchestrator/`

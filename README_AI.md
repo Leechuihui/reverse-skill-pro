@@ -185,9 +185,9 @@ This allows the relative paths in `routing.md`, such as `../CTF-Sandbox-Orchestr
 ### If You Only Want to Put the Skill Pack in Place First
 
 1. Put the whole directory somewhere you like, for example: `<package root>\`
-2. Go to `skills\SKILL.md`
+2. Go to `skills\router.md`
 3. When handling a task, read files in this order:
-   1. `SKILL.md`
+   1. `router.md`
    2. `routing.md`
    3. The `SKILL.md` in the corresponding subdirectory
    4. Read `tool-index.md` only when you need to confirm local tools
@@ -386,7 +386,7 @@ The bootstrap command enables bearer authentication for Anything Analyzer. It re
 
 No matter how you inject instructions, at minimum tell the AI about these three entry files:
 
-- `skills\SKILL.md`
+- `skills\router.md`
 - `skills\routing.md`
 - `skills\tool-index.md`
 

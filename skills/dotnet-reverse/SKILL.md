@@ -167,7 +167,7 @@ File → Save Module → 替换原文件
 
 ## 路由上下文
 
-**上游入口**: `skills/SKILL.md`（总控）、`routing.md`
+**上游入口**: `skills/router.md`（总控）、`routing.md`
 **下游出口**:
 - IL2CPP / NativeAOT（native）→ `reverse-engineering/`
 - 深度 native .so/.dll 段分析 → `ida-reverse/` / `radare2/`

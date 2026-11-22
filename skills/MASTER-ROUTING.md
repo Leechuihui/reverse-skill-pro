@@ -1,4 +1,8 @@
-﻿# reverse-skill-pro PRIMARY 快路径
+---
+name: MASTER-ROUTING
+description: reverse-skill-pro PRIMARY 快路径：执行契约、PRIMARY 阶梯与路由优先级表，须与 routing.json 同步。
+---
+# reverse-skill-pro PRIMARY 快路径
 
 > `scripts/master-route.ps1` 与 `scripts/master-route.sh` 必须保持相同路由契约；平台只改变执行入口，不改变 routing semantics。
 

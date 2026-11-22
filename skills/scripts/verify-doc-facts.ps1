@@ -4,7 +4,7 @@
   against source-of-truth (bootstrap-manifest.json / McpHttpServer.java).
 
 .DESCRIPTION
-  P1-4 guard: RULES.md / RULES_zh.md / skills/SKILL.md fact tables must not
+  P1-4 guard: RULES.md / RULES_zh.md / skills/router.md fact tables must not
   drift from the manifest and the Burp extension source. Exit 1 on mismatch.
 #>
 $ErrorActionPreference = 'Stop'
@@ -54,7 +54,7 @@ function Test-ListHasAll([string]$ListText, [string[]]$Names) {
 
 $rulesEn = Get-Content (Join-Path $Root 'RULES.md') -Raw -Encoding UTF8
 $rulesZh = Get-Content (Join-Path $Root 'RULES_zh.md') -Raw -Encoding UTF8
-$skillMd = Get-Content (Join-Path $Root 'skills\SKILL.md') -Raw -Encoding UTF8
+$skillMd = Get-Content (Join-Path $Root 'skills\router.md') -Raw -Encoding UTF8
 
 $enList = Get-ListLine $rulesEn 'Supported capability names'
 $zhList = Get-ListLine $rulesZh '支持的能力名'

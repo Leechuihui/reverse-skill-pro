@@ -406,7 +406,7 @@ radare2-skills 项目（radareorg/radare2-skills）提供了更完整的生态�
 
 ## 路由上下文
 
-**上游入口**: `skills/SKILL.md`（总控）、`routing.md`
+**上游入口**: `skills/router.md`（总控）、`routing.md`
 **上游备选**: `ida-reverse/`（需要反编译/伪代码时升级到 IDA）
 **下游出口**:
 - 需动态分析 → `reverse-engineering/tools-dynamic.md`（Frida/GDB）

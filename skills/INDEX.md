@@ -1,4 +1,8 @@
-﻿# reverse-skill-pro 技能导航索引
+---
+name: INDEX
+description: reverse-skill-pro 技能导航索引（自动生成）：模块总览、目录树与路由入口，用于按摘要定位子 skill。
+---
+# reverse-skill-pro 技能导航索引
 
 > 本文件由 `skills/scripts/extract-summaries.ps1` 自动生成，**请勿手改**。
 > 修改摘要请编辑对应模块 `SKILL.md` 的 frontmatter `description`，然后重跑脚本。

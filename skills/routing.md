@@ -1,3 +1,7 @@
+---
+name: routing
+description: 逆向与安全技能三轴路由矩阵（目标类型 × 用户意图 × 工具链），用于 PRIMARY 命中后的歧义消解。
+---
 # Reverse Engineering Skill Routing Matrix
 
 > **Advisory only.** PRIMARY comes from `config/routing.json` via `scripts/master-route.ps1`. This file is a 3-axis disambiguation view. If a row here disagrees with JSON, JSON wins.

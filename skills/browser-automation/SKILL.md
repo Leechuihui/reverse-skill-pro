@@ -223,7 +223,7 @@ npm run doctor:network
 
 ## 路由上下文
 
-**上游入口**: `skills/SKILL.md`（总控）、`routing.md`
+**上游入口**: `skills/router.md`（总控）、`routing.md`
 **适用场景**: 任何需要自动化操作浏览器或桌面应用的任务
 **下游出口**:
 - 抓到的请求需要分析 → `anything-analyzer` 或 `js-reverse`

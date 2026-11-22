@@ -1,4 +1,8 @@
-﻿# 新增 Skill 指南
+---
+name: CONTRIBUTING
+description: 向 reverse-skill-pro 新增 skill 模块的标准流程：基准用例、routing.json、优先级表与校验脚本。
+---
+# 新增 Skill 指南
 
 本文档定义了向本包新增一个 skill 模块的标准流程。无论是人工新增还是 AI 在任务中发现需要新增，都按这个流程走。
 
@@ -258,9 +262,9 @@ if (-not $spec.Available) {
 
 不要为「路由没打中」就新建 PRIMARY。先加 keyword。新 PRIMARY 必须有独立工具链 **和** 至少 2 条基准用例。
 
-### 5.2 更新根 SKILL.md / INDEX
+### 5.2 更新根 router.md / INDEX
 
-打开 `skills/SKILL.md` 模块表；跑 `extract-summaries.ps1` 重生 `INDEX.md`。
+打开 `skills/router.md` 模块表；跑 `extract-summaries.ps1` 重生 `INDEX.md`。
 
 ### 5.3 不要写客户端全局规则
 

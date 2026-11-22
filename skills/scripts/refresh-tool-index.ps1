@@ -74,10 +74,14 @@ $reports = @(Get-ReverseToolReport | Where-Object {
 $generatedAt = Get-Date -Format 'yyyy-MM-dd HH:mm:ss K'
 
 $markdownLines = @(
+    '---',
+    'name: tool-index',
+    'description: 本机逆向与安全工具索引（自动生成）：工具可用性、路径与归属 skill，用于确认本地工具链后再动手。',
+    '---',
     '# 逆向工具索引',
     '',
     "- 扫描时间: $generatedAt",
-    '- 路由入口: `SKILL.md` → `routing.md` → 对应子 skill',
+    '- 路由入口: `router.md` → `routing.md` → 对应子 skill',
     '- 说明: 本表由 `skills/scripts/refresh-tool-index.ps1` 自动生成，用于各 Agent 客户端的路由和工具路径确认。',
     '- 注意: MCP-only 能力的工具可用性与运行时分开计算；`npx` 只代表 npm MCP 的运行条件，不能单独让 jshookmcp / reqable-mcp 变成可用或 Ready。',
     '',

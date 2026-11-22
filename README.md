@@ -138,7 +138,7 @@ Platform notes:
 | [RULES.md](RULES.md) | Global routing rules |
 | [skills/MASTER-ROUTING.md](skills/MASTER-ROUTING.md) | PRIMARY ladder |
 | [skills/routing.md](skills/routing.md) | Routing matrix (scenario → skill) |
-| [skills/SKILL.md](skills/SKILL.md) | Master control entry |
+| [skills/router.md](skills/router.md) | Master control entry (router) |
 | [skills/INDEX.md](skills/INDEX.md) | Auto-generated skill navigation index |
 | [skills/config/routing.json](skills/config/routing.json) | Routing single source of truth (47 rules, R0–R48) |
 | [skills/config/mcp-presets.json](skills/config/mcp-presets.json) | MCP preset wiring profiles |

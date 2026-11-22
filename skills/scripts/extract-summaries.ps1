@@ -73,6 +73,11 @@ foreach ($sf in $skillFiles) {
 }
 
 $sb = New-Object System.Text.StringBuilder
+# frontmatter：让 INDEX.md 作为 skill 注册时有 name/description，而不是空摘要
+[void]$sb.AppendLine('---')
+[void]$sb.AppendLine('name: INDEX')
+[void]$sb.AppendLine('description: reverse-skill-pro 技能导航索引（自动生成）：模块总览、目录树与路由入口，用于按摘要定位子 skill。')
+[void]$sb.AppendLine('---')
 [void]$sb.AppendLine('# reverse-skill-pro 技能导航索引')
 [void]$sb.AppendLine('')
 [void]$sb.AppendLine('> 本文件由 `skills/scripts/extract-summaries.ps1` 自动生成，**请勿手改**。')

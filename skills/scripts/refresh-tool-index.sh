@@ -144,6 +144,10 @@ records_tmp="$(mktemp)"
 trap 'rm -f "$records_tmp"' EXIT
 
 {
+  echo "---"
+  echo "name: tool-index"
+  echo "description: 本机逆向与安全工具索引（自动生成）：工具可用性、路径与归属 skill，用于确认本地工具链后再动手。"
+  echo "---"
   echo "# Tool Index"
   echo ""
   echo "- Generated at: $GENERATED_AT"

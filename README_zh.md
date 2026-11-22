@@ -138,7 +138,7 @@ git clone https://github.com/Leechuihui/reverse-skill-pro.git
 | [RULES.md](RULES.md) | 全局路由规则 |
 | [skills/MASTER-ROUTING.md](skills/MASTER-ROUTING.md) | PRIMARY 快路径 |
 | [skills/routing.md](skills/routing.md) | 路由矩阵（场景 → Skill） |
-| [skills/SKILL.md](skills/SKILL.md) | 总控入口 |
+| [skills/router.md](skills/router.md) | 总控入口（路由） |
 | [skills/INDEX.md](skills/INDEX.md) | 自动生成的 Skill 导航索引 |
 | [skills/config/routing.json](skills/config/routing.json) | 路由单一事实源（47 条规则，R0–R48） |
 | [skills/config/mcp-presets.json](skills/config/mcp-presets.json) | MCP 预置接线档案 |

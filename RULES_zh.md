@@ -436,7 +436,7 @@ gamma -> --destructive false
 2. 在 `routing.json` 添加关键词或新 PRIMARY，并同步 `MASTER-ROUTING.md` 优先级表
 3. 按需在 `routing.md` 三轴附录中补充说明；不得把它当作事实源
 4. 如果内容足够独立，按 CONTRIBUTING.md 流程新增 skill 目录
-5. 更新 skills/SKILL.md 的模块表
+5. 更新 skills/router.md 的模块表
 
 ### 搜索质量要求
 
@@ -495,7 +495,7 @@ bash <本包根目录>/kali/scripts/refresh-tool-index.sh
 
 路径：`<本包根目录>/skills/CONTRIBUTING.md`
 
-新增后必须同步更新：routing-benchmark.json、routing.json、MASTER-ROUTING.md、skills/SKILL.md；涉及工具时再更新 bootstrap-manifest.json、ToolDiscovery.ps1 和 refresh-tool-index.ps1。`routing.md` 仅作为歧义附录按需同步。
+新增后必须同步更新：routing-benchmark.json、routing.json、MASTER-ROUTING.md、skills/router.md；涉及工具时再更新 bootstrap-manifest.json、ToolDiscovery.ps1 和 refresh-tool-index.ps1。`routing.md` 仅作为歧义附录按需同步。
 
 ---
 

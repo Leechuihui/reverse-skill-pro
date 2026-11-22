@@ -44,7 +44,7 @@ Evidence→Finding→Path, coherence verification.
   "gdb angr unicorn" case still routes to R0
 - `MASTER-ROUTING.md` priority table kept 1:1 with JSON (verify-routing-coherence green)
 - `routing.md` / `routing_zh.md`: new rows across domain table, by-intent table, and tool mapping table
-- `skills/SKILL.md`: master module table extended with the four new modules
+- `skills/router.md`: master module table extended with the four new modules
 - `INDEX.md` regenerated via extract-summaries.ps1 (48 modules)
 - Routing regression benchmark extended with 16 cases (4 per new route, bilingual); 189/189 green
 
